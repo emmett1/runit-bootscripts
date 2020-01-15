@@ -11,7 +11,7 @@ msg() {
     echo -e "\e[0;32m*\e[0m $@"
 }
 
-echo "Booting up system..."
+msg "Booting up system..."
 
 msg "Mounting virtual file systems..."
 mountpoint -q /proc    || mount -t proc proc /proc -o nosuid,noexec,nodev
